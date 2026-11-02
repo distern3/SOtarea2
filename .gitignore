@@ -53,3 +53,12 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# Reglas especificas del Torneo Komikan
+torneo
+*.log
+registro_tablero.txt
+.vscode/
+.DS_Store
+*.swp
+

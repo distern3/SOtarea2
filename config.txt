@@ -1,1 +1,15 @@
+SEED=2026
+DELAY_MIN=50
+DELAY_MAX=300
 
+# Disposicion del Tablero (P = Puma, D = Perro, 0 = Libre)
+# Nodo superior del trono
+P
+# Nodos intermedios del triangulo
+0 0
+# Cuadricula principal 5x5
+0 0 0 0 0
+0 0 0 0 0
+0 D D 0 0
+D D D D D
+D D D D D

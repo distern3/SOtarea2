@@ -1,0 +1,4 @@
+# Valgrind serializa los hilos: latido más tolerante para evitar falsos abandonos.
+SEED=9
+HEARTBEAT_TIMEOUT_MS=5000
+MAX_DURACION_MS=3000

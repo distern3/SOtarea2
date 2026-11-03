@@ -1,0 +1,10 @@
+# Puma rodeado de perros expuestos: debe haber capturas por salto.
+SEED=11
+ESTRATEGIA=1
+0
+0 0
+0 0 0 0 0
+0 D D D 0
+0 D P D 0
+0 D D D 0
+D D 0 D D

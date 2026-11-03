@@ -62,3 +62,6 @@ registro_tablero.txt
 .DS_Store
 *.swp
 
+logs/
+torneo_tsan
+*.dSYM/

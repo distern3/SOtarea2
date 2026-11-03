@@ -1,0 +1,3 @@
+# Partidas muy cortas: con alta probabilidad terminan por tiempo (empate).
+SEED=13
+MAX_DURACION_MS=600

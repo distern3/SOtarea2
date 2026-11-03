@@ -1,0 +1,11 @@
+# El Puma parte en el trono sin ningún movimiento posible:
+# vecinos L, R y (0,2) ocupados, y destinos de salto (0,0), (0,4) y (1,2) ocupados.
+# Esperado: ganan los Perros (Puma acorralado) en el primer ciclo del Puma.
+SEED=7
+P
+D D
+D 0 D 0 D
+0 0 D 0 0
+0 D D 0 0
+0 0 D D 0
+0 D D 0 0

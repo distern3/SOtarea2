@@ -1,0 +1,30 @@
+# Uso:
+#   docker compose up                       N=10 M=3 config.txt
+#   N=20 M=3 docker compose up              otros parámetros (solo para compose)
+#   docker compose run --rm torneo          recomendado para la demo de Ctrl+C
+#   docker compose run --rm valgrind        fugas y descriptores
+#   docker compose run --rm tests           tests/run_tests.sh en Linux
+x-base: &base
+  build: .
+  image: komikan-torneo
+  init: true                # tini como PID 1: reenvía señales y recoge zombies
+  tty: true
+  volumes:
+    - ./:/app
+
+services:
+  torneo:
+    <<: *base
+    stop_signal: SIGINT     # el Ctrl+C de compose llega como SIGINT, no SIGTERM
+    stop_grace_period: 15s
+    command: sh -c "make clean all && exec ./torneo ${N:-10} ${M:-3} ${CONFIG:-config.txt}"
+
+  valgrind:
+    <<: *base
+    profiles: [dev]
+    command: sh -c "make clean all && timeout -s INT 5 valgrind --leak-check=full --track-fds=yes ./torneo 10 2 tests/config_valgrind.txt"
+
+  tests:
+    <<: *base
+    profiles: [dev]
+    command: sh -c "make clean all && tests/run_tests.sh"

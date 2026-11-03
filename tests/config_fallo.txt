@@ -1,0 +1,11 @@
+# Simulación de 4.1: cada ciclo de ficha tiene 5% de probabilidad de fallar.
+SEED=5
+FAIL_PROB=0.05
+LOG_TABLERO=0
+P
+0 0
+0 0 0 0 0
+0 0 0 0 0
+0 D D 0 0
+D D D D D
+D D D D D

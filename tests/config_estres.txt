@@ -1,0 +1,9 @@
+# Estrés: sin retardo entre movimientos, partidas cortas, log sin tableros.
+SEED=3
+DELAY_MIN=0
+DELAY_MAX=0
+ARRIVAL_MIN=0
+ARRIVAL_MAX=0
+MAX_DURACION_MS=1500
+HEARTBEAT_TIMEOUT_MS=3000
+LOG_TABLERO=0

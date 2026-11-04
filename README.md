@@ -72,4 +72,4 @@ docker compose run --rm torneo     # demo de Ctrl+C
 | `jugador.c` | Ciclo de una ficha y heurística de movimientos. |
 | `tablero.c` | Topología, saltos, distancias, render y monitor de casillas. |
 | `config.c`, `log.c` | Configuración y consola thread-safe. |
-| `docs/plan.md` | Diseño completo y decisiones. |
+| `informe.pdf` | Diseño de sincronización, análisis de riesgos y evaluación |
